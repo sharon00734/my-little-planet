@@ -1,0 +1,14 @@
+---
+layout: default
+---
+
+<h1>Animals on the Planet</h1>
+
+<ul>
+	{% for animals in site.categories.animals_on_planet %}
+	<li>
+		<a href="">{{animals.title}}</a>
+		<p>{{animals.meta}}</p>
+	</li>
+	{% endfor %}
+</ul>
